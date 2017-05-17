@@ -2,3 +2,4 @@ https://www.linux.com/news/which-light-weight-open-source-web-server-right-you
 https://www.raspberrypi.org/documentation/remote-access/web-server/nginx.md
 http://www.penguintutor.com/linux/light-webserver
 http://www.embedded.com/design/connectivity/4442783/10-Things-NOT-to-do-when-embedding-a-web-server
+https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
