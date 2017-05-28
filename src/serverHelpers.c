@@ -15,7 +15,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "usuarios.h"
 #include "estructuraDeDatos.h"
 #include "estructuraPromedios.h"
 #include "serverHelpers.h"

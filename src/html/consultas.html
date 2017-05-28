@@ -32,42 +32,59 @@
     </nav>
 
     <div class="container">
-      <form>
+      <form action = "/cgi-bin/server.cgi" method = "GET">
         <div class="form-group">
           <label for="descargar">Descargar datos de estacion:</label>
-          <select class="form-control" id="descargar">
+          <select class="form-control" id="descargar" name="descargar">
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
-          </select>
-          <br>
+         <input type="submit" value="Submit"> 
+        </div>
+      </form>
+
+      <form action = "/cgi-bin/server.cgi" method = "GET">
+        <div class="form-group">
           <label for="diario_precipitacion">Diario precipitacion de estacion:</label>
-          <select class="form-control" id="diario_precipitacion">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select class="form-control" id="diario_precipitacion" name="diario_precipitacion">
+            <option>30135</option>
+            <option>30057</option>
+            <option>30061</option>
+            <option>30099</option>
+            <option>30069</option>
           </select>
-          <br>
+          <input type="submit" value="Submit"> 
+        </div>
+      </form>
+
+      <form action = "/cgi-bin/server.cgi" method = "GET">
+        <div class="form-group">
           <label for="mensual_precipitacion">Mensual precipitacion de estacion:</label>
-          <select class="form-control" id="mensual_precipitacion">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select class="form-control" id="mensual_precipitacion" name="mensual_precipitacion">
+            <option>30135</option>
+            <option>30057</option>
+            <option>30061</option>
+            <option>30099</option>
+            <option>30069</option>
           </select>
-          <br>
+          <input type="submit" value="Submit"> 
+        </div>
+      </form>
+
+      <form action = "/cgi-bin/server.cgi" method = "GET">
+        <div class="form-group">
           <label for="promedio_variable">Calcular el promedio de la variable seleccionada</label>
-          <select class="form-control" id="promedio_variable">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>          
+          <select class="form-control" id="promedio_variable" name="promedio_variable">
+            <option>temperatura</option>
+            <option>humedad</option>
+            <option>punto_rocio</option>
+            <option>precipitacion</option>
+            <option>velocidad_viento</option>
+            <option>rafaga_maxima</option>
+            <option>presion</option>
+          </select> 
+         <input type="submit" value="Submit">         
         </div>
       </form>
     </div>

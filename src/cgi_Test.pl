@@ -1,19 +1,11 @@
 #!/usr/bin/perl
 
-# hello.pl -- my first perl script!
+# HTTP Header
+print "Content-Type:application/octet-stream; name=\"FileName\"\r\n";
+print "Content-Disposition: attachment; filename=\"FileName\"\r\n\n";
 
-print "Content-type: text/html\n\n";
-
-print <<"EOF";
-<HTML>
-
-<HEAD>
-<TITLE>Hello, world!</TITLE>
-</HEAD>
-
-<BODY>
-<H1>Hello, world!</H1>
-</BODY>
-
-</HTML>
-EOF
+# Actual File Content will go hear.
+open( FILE, "</home/gustav/Desktop/TP3-So2" );
+while(read(FILE, $buffer, 100) ){
+   print("$buffer");
+}
