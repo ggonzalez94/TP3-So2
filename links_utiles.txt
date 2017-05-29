@@ -4,3 +4,4 @@ http://www.penguintutor.com/linux/light-webserver
 http://www.embedded.com/design/connectivity/4442783/10-Things-NOT-to-do-when-embedding-a-web-server
 https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
 https://askubuntu.com/questions/600714/creating-a-symlink-from-one-folder-to-another-with-different-names
+https://www.sitepoint.com/uploading-files-cgi-perl-2/

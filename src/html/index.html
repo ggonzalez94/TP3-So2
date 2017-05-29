@@ -25,11 +25,27 @@
           <ul class="nav navbar-nav">
             <li><a href="cgi-bin/ksamp.cgi">Informacion del sitema</a></li>
             <li><a href="consultas.html">Consultas</a></li>
-            <li><a href="modulos.html">Modulos del sistema</a></li>
+            <li><a href="cgi-bin/modulos.cgi">Modulos del sistema</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="container">
+      <form action = "/cgi-bin/upload.pl" method = "post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="upload">Subir modulo</label>
+            <input type="file" value="file" name="file"> 
+            <input type="Submit" value="Submit Form" name="Submit">
+        </div>
+      </form>
+
+      <div class="btn-group btn-group-justified">
+        <a href="cgi-bin/install.sh" class="btn btn-primary">Instalar Modulos</a>
+        <a href="cgi-bin/remove.sh" class="btn btn-primary">Desinstalar Modulos</a>
+      </div> 
+
+    </div>
 
 
   </body>

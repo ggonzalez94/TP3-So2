@@ -1,0 +1,1 @@
+cmd_/home/gustav/Desktop/TP3-So2/src/kernel_modules/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/gustav/Desktop/TP3-So2/src/kernel_modules/hello.ko /home/gustav/Desktop/TP3-So2/src/kernel_modules/hello.o /home/gustav/Desktop/TP3-So2/src/kernel_modules/hello.mod.o
