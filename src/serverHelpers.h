@@ -15,3 +15,4 @@ void listar_estaciones( struct Datos * const datos, struct Promedio * promedio_v
 void mensual_precipitacion(int numero_estacion,float array_precipitacion[],struct Datos * const datos,int size_datos);
 void diario_precipitacion(int numero_estacion,float array_precipitacion[],struct Datos * const datos,int size_datos);
 void calcular_promedio(char *variable,struct Promedio * estaciones,struct Datos * const datos,int size_datos,int cantidad_estaciones);
+void escribir_archivo(int estacion, float precipitacion_mensual[12], float temperatura, float humedad, char *nombre_estacion);

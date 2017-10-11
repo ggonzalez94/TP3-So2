@@ -87,11 +87,33 @@ void printPage(char *metodo,char *valor,struct Datos *datos,struct Promedio *pro
           "</div>"
         "</nav>");
 
-     printf("<h1>%s</h1>",metodo );
-     printf("<h1>%s</h1>",valor );
+/*     printf("<h1>%s</h1>",metodo );
+     printf("<h1>%s</h1>",valor );*/
 
      if(strcmp(metodo,"descargar") == 0){
-        printf("Descargando");
+        float temperatura = -9999;
+        float humedad = -9999;
+        char *nombre_estacion;
+        mensual_precipitacion(numero_estacion,precipitacion_mensual,datos,TAM_FILE);
+        calcular_promedio("temperatura",promedio_estaciones,datos,TAM_FILE,ESTACIONES);
+        for (int i = 0; i < ESTACIONES; ++i)
+        {
+          if (promedio_estaciones[i].numero == numero_estacion){
+              temperatura = promedio_estaciones[i].variable;
+
+          }
+        }
+        calcular_promedio("humedad",promedio_estaciones,datos,TAM_FILE,ESTACIONES);
+        for (int i = 0; i < ESTACIONES; ++i)
+        {
+          if (promedio_estaciones[i].numero == numero_estacion){
+              humedad = promedio_estaciones[i].variable;
+              nombre_estacion = promedio_estaciones[i].nombre_estacion;
+          }
+        }
+        escribir_archivo(numero_estacion,precipitacion_mensual,temperatura,humedad,nombre_estacion);
+        printf("Datos de la estacion %i </br>",numero_estacion);
+        printf("<a download href=\"../text_files/datos_estacion.txt\">Descargar archivo</a>");
      }
      else if(strcmp(metodo,"diario_precipitacion") == 0){
         diario_precipitacion(numero_estacion,precipitacion_diaria,datos,TAM_FILE);
