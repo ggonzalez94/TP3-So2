@@ -311,8 +311,8 @@ void calcular_promedio(char *variable,struct Promedio * promedio_variable,struct
 
 void escribir_archivo(int estacion, float precipitacion_mensual[12], float temperatura, float humedad, char *nombre_estacion){
 	char buffer[1000];
-	char cadena[20];
-	char nro_estacion[20];
+	char cadena[40];
+	char nro_estacion[40];
 	FILE *fp;
 
 	fp = fopen("../text_files/datos_estacion.txt","w");
