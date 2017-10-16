@@ -311,8 +311,8 @@ void calcular_promedio(char *variable,struct Promedio * promedio_variable,struct
 
 void escribir_archivo(int estacion, float precipitacion_mensual[12], float temperatura, float humedad, char *nombre_estacion){
 	char buffer[1000];
-	char cadena[40];
-	char nro_estacion[40];
+	char cadena[60];
+	char nro_estacion[60];
 	FILE *fp;
 
 	fp = fopen("../text_files/datos_estacion.txt","w");
@@ -326,16 +326,16 @@ void escribir_archivo(int estacion, float precipitacion_mensual[12], float tempe
 	strcat(buffer,cadena);
 	sprintf(cadena,"Promedio humedad: %f\n",humedad);
 	strcat(buffer,cadena);
-	for (int i = 0; i < 12.; ++i)
+	for (int i = 0; i < 12.; i++)
 	{
 		sprintf(cadena,"Mes %i: %f \n",i,precipitacion_mensual[i]);
 		strcat(buffer,cadena);
 	}
 	int n = fwrite(buffer,sizeof(buffer[0]),strlen(buffer),fp);
-    if (n<0){
-        perror("File write");
-    }
-    fclose(fp);
+    	if (n<0){
+        	perror("File write");
+    	}
+    	fclose(fp);
 	return;
 }
 

@@ -111,7 +111,7 @@ void printPage(char *metodo,char *valor,struct Datos *datos,struct Promedio *pro
               nombre_estacion = promedio_estaciones[i].nombre_estacion;
           }
         }
-        escribir_archivo(numero_estacion,precipitacion_mensual,temperatura,humedad,nombre_estacion);
+        //escribir_archivo(numero_estacion,precipitacion_mensual,temperatura,humedad,nombre_estacion);
         printf("Datos de la estacion %i </br>",numero_estacion);
         printf("<a download href=\"../text_files/datos_estacion.txt\">Descargar archivo</a>");
      }
